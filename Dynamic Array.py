@@ -23,10 +23,10 @@ def dynamicArray(n, q):
     st = []
     for i in range(len(q)):
         if q[i][0] == 1:
-            ar[ (q[i][1] ^ lastans) % n ].append(q[i][2])
+            ar[(q[i][1] ^ lastans) % n].append(q[i][2])
         else:
             st.append(ar[ (q[i][1] ^ lastans) % n ][q[i][2] % len(ar[ (q[i][1] ^ lastans) % n ])])
-            print(ar[ (q[i][1] ^ lastans) % n ][q[i][2] % len(ar[ (q[i][1] ^   lastans) % n ])])
+            print(ar[ (q[i][1] ^ lastans) % n ][q[i][2] % len(ar[ (q[i][1] ^ lastans) % n ])])
             lastans = ar[ (q[i][1] ^ lastans) % n ][q[i][2] % len(ar[ (q[i][1] ^ lastans) % n ])]
     return st
 
