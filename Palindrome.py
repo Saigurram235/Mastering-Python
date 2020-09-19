@@ -18,6 +18,7 @@ def Palindrome(item):
         return 'It is a Palindrome'
     else:
         return 'it is not a Palindrome'
+    
 
 print(Palindrome('radar'))
 print(Palindrome('dcbhbchehcd'))
